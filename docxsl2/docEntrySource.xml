@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+/*******************************************************************************
+ * Copyright (c) 2006 IBM Corporation and others.
+ * All rights reserved. This program and the accompanying materials
+ * are made available under the terms of the Eclipse Public License v1.0
+ * which accompanies this distribution, and is available at
+ * http://www.eclipse.org/legal/epl-v10.html
+ *
+ * Contributors:
+ *     IBM Corporation - initial API and implementation
+ *******************************************************************************/
+ -->
+<tns:DocumentEntry 
+ xmlns:hl7v2="urn:org:openhealthtools:ihe:common:hl7v2" 
+ xmlns:p0="htt//www.w3.org/XML/1998/namespace" 
+ xmlns:tns="urn:org:openhealthtools:ihe:xds:metadata" 
+ xmlns:xsi="htt//www.w3.org/2001/XMLSchema-instance" 
+ xmlns:xdsdemo="http://mirc.rsna.org/xdsdemo"
+ xsi:schemaLocation="urn:org:openhealthtools:ihe:xds:metadata metadata.xsd urn:org:openhealthtools:ihe:common:hl7v2 ../../../org.openhealthtools.ihe.common.hl7v2/resources/schema/hl7v2_wrapper.xsd htt//www.w3.org/XML/1998/namespace htt//www.w3.org/2001/xml.xsd ">
+   <author>
+   	<authorInstitution>
+			<organizationName><xdsdemo:institution-name/></organizationName>
+  	</authorInstitution>
+  	<authorPerson>
+    		<idNumber>ID</idNumber>
+    		<familyName>Last Name</familyName>
+  		<givenName>FirstName</givenName>
+  		<assigningAuthorityUniversalId>2.16.840.1.113883.3.933</assigningAuthorityUniversalId>
+		<assigningAuthorityUniversalIdType>ISO</assigningAuthorityUniversalIdType>
+  	</authorPerson>
+  </author>
+  <classCode>
+    <code>Consult</code>
+    <displayName>
+      <LocalizedString value="Consult"/>
+    </displayName>
+    <schemeName>Connect-a-thon classCodes</schemeName>
+  </classCode>
+  <confidentialityCode>
+    <code>N</code>
+    <displayName>
+      <LocalizedString value="Normal"/>
+    </displayName>
+    <schemeName>Connect-a-thon confidentialityCodes</schemeName>
+  </confidentialityCode>
+  <creationTime><xdsdemo:date/></creationTime>
+  <formatCode>
+    <code>CDAR2/IHE 1.0</code>
+    <displayName>
+      <LocalizedString value="CDAR2/IHE 1.0"/>
+    </displayName>
+    <schemeName>Connect-a-thon formatCodes</schemeName>
+  </formatCode>
+  <healthCareFacilityTypeCode>
+    <code>Outpatient</code>
+    <displayName>
+      <LocalizedString value="Outpatient"/>
+    </displayName>
+    <schemeName>Connect-a-thon healthcareFacilityTypeCodes</schemeName>
+  </healthCareFacilityTypeCode>
+  <languageCode>en-US</languageCode>
+ <!-- Image Sharing Testing -->
+ <patientId>
+   <idNumber><xdsdemo:patient-id/></idNumber>  
+   <assigningAuthorityUniversalId><xdsdemo:assigning-authority-OID/></assigningAuthorityUniversalId>
+   <assigningAuthorityUniversalIdType>ISO</assigningAuthorityUniversalIdType>
+  </patientId>
+    
+ <practiceSettingCode>
+    <code>General Medicine</code>
+    <displayName>
+      <LocalizedString value="General Medicine"/>
+    </displayName>
+    <schemeName>Connect-a-thon practiceSettingCodes</schemeName>
+  </practiceSettingCode>
+  <sourcePatientId>
+   <idNumber><xdsdemo:patient-id/></idNumber>
+   <assigningAuthorityUniversalId><xdsdemo:assigning-authority-OID/></assigningAuthorityUniversalId>
+   <assigningAuthorityUniversalIdType>ISO</assigningAuthorityUniversalIdType>
+  </sourcePatientId>
+  <sourcePatientInfo>
+	<patientIdentifier>
+		<idNumber><xdsdemo:patient-id/></idNumber>
+		<assigningAuthorityUniversalId><xdsdemo:assigning-authority-OID/></assigningAuthorityUniversalId>
+		<assigningAuthorityUniversalIdType>ISO</assigningAuthorityUniversalIdType>
+	</patientIdentifier>
+	<patientName>
+	  <familyName>Patient Last Name</familyName>
+ 	  <givenName>Patient First Name</givenName>
+ 	</patientName>
+	<patientDateOfBirth>Patient Birth Date</patientDateOfBirth>
+	<patientSex>Patient Sex</patientSex>
+	<patientAddress>
+		<streetAddress>
+		  Street  
+		  City,   
+		  State   
+		  Zip     
+		  Country
+		</streetAddress>
+	</patientAddress>
+  </sourcePatientInfo>
+  <typeCode>
+    <code>11488-4</code>
+    <displayName>
+      <LocalizedString value="Consultation Note"/>
+    </displayName>
+    <schemeName>LOINC</schemeName>
+  </typeCode>
+</tns:DocumentEntry>
